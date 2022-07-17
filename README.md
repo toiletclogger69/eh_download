@@ -1,7 +1,7 @@
 # eh_download
 dgeh, Download Gallery E-hentai.
 
-GUI gallery downloader for e-hentai and possibly nhentai
+GUI gallery downloader for e-hentai
 
 Once you downloaded all the files you want, I suggest using this script : https://gist.github.com/toiletclogger69/d08164cd8c978f7a1fc2f12ee9e4f15a to easily read the gallery afterward.
 
@@ -12,8 +12,7 @@ None, just click on the exe
 
 ## requirements (as a python script)
 ```
-pip install gooey
-pip install requests
+pip install gooey requests bs4
 ```
 
 ---
@@ -49,11 +48,6 @@ It only accept url from e-hentai (eg : https://e-hentai.org/g/lots_of_number/lot
 Go into [eh.py](eh.py), set `TRUE_IF_CLI` to True.
 
 Add a text file named "urls.txt" in your current folder, put every urls inside then execute the script with "python eh.py".
-
-## Issue with nhentai
-I can't access easily that website so I can't test if the script works. 
-
-In theory it should, if you get an error saying forbidden access (Cloudflare protection against bot) I can't do anything about it.
 
 ## How to build the exe
 `pip install pyinstaller`
