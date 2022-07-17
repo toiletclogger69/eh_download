@@ -169,11 +169,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # https://e-hentai.org/g/2228972/6126f6c5b4/
-    # フレイラお姉ちゃんが実験台にされてひどい目に合うお話
-    # https://e-hentai.org/g/2213861/40252db7b3/
-    # [ChCrumbles] Network I／O [Hi-Res][Still be Continuing ?...]
-
     try:
         if TRUE_IF_CLI:
             """ Read every url from a text file """
