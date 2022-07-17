@@ -5,7 +5,7 @@ GUI gallery downloader for e-hentai
 
 Once you downloaded all the files you want, I suggest using this script : https://gist.github.com/toiletclogger69/d08164cd8c978f7a1fc2f12ee9e4f15a to easily read the gallery afterward.
 
-## **DOWNLOAD THE EXE HERE [dgeh.zip](https://github.com/toiletclogger69/eh_download/files/9127613/dfge.zip)**
+## **DOWNLOAD THE EXE HERE [dfge.zip](https://github.com/toiletclogger69/eh_download/files/9127613/dfge.zip)**
 
 ## requirements (as an exe)
 None, just click on the exe
@@ -40,9 +40,9 @@ https://e-hentai.org/g/lots_of_number2/lots_of_number2/
 https://e-hentai.org/g/lots_of_number3/lots_of_number3/
 ```
 
-It only accept url from e-hentai (eg : https://e-hentai.org/g/lots_of_number/lots_of_number/) and nhentai (eg : https://nhentai.net/g/lots_of_number/)
+It only accept url from e-hentai (eg : https://e-hentai.org/g/lots_of_number/lots_of_number/).
 
-**Replace character** : Remove every | ? ! and other character that are not accepted in window folder name.
+**Replace character** : Remove every | ? ! / and other character that are not accepted in window folder name.
 
 ## Use a standalone script
 Go into [eh.py](eh.py), set `TRUE_IF_CLI` to True.
