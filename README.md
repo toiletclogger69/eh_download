@@ -5,7 +5,7 @@ GUI gallery downloader for e-hentai
 
 Once you downloaded all the files you want, I suggest using this script : https://gist.github.com/toiletclogger69/d08164cd8c978f7a1fc2f12ee9e4f15a to easily read the gallery afterward.
 
-## **DOWNLOAD THE EXE HERE [dfge.zip](https://github.com/toiletclogger69/eh_download/files/9174362/dgeh.zip)**
+## **DOWNLOAD THE EXE HERE [dgeh.zip](https://github.com/toiletclogger69/eh_download/files/9174362/dgeh.zip)**
 
 ## requirements (as an exe)
 None, just click on the exe
