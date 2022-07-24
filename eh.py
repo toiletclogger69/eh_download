@@ -58,6 +58,10 @@ headers = {"User-Agent" : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleW
 
 
 def download_gallery(url='', true_if_replace_name=False) -> int:
+    # ignore warning "offensive content"
+    if "?nw=always" not in url:
+        url += "?nw=always"
+
     html_request = requests.get(url, headers=headers)
     html_request.raise_for_status()
     html_page = BeautifulSoup(html_request.text, 'html.parser')
