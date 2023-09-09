@@ -54,4 +54,4 @@ Add a text file named "urls.txt" in your current folder, put every urls inside t
 
 go into the current folder >
 
-`pyinstaller build.spec`
+`pyinstaller --onefile --noconsole eh.py`
