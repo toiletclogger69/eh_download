@@ -96,7 +96,12 @@ def download_gallery(url='', true_if_replace_name=False) -> int:
     # informations
     print("\n\n============================\n")
     print(f'\t{number_of_page} pages - {url}')
-    print(f'\t{title_gallery}')
+    
+    # issue with UnicodeEncodeError when using Gooey, issue seems difficult to fix properly so instead we just ignore it
+    try:
+        print(f'\t{title_gallery}')
+    except UnicodeEncodeError:
+        print("\tThis windows cannot display non-ascii character, cannot display the title")
     print("\n----------------------------\n")
 
     for page_number in range(number_of_page):
@@ -135,12 +140,13 @@ def download_gallery(url='', true_if_replace_name=False) -> int:
     , disable_progress_bar_animation=True
     , program_name='dgeh'
     , requires_shell=False
+    , default_size=(500, 770)
     , program_description="Download gallery on eh"
     , menu=[{'name': 'About'
         , 'items': [{
             'type': 'AboutDialog'
             , 'menuTitle': 'About'
-            , 'version': '1.1.0'
+            , 'version': '1.1.3'
             , 'copyright': '2021'
             , 'website': 'https://github.com/toiletclogger69/eh_download'
             , 'developer': 'toiletclogger69'
@@ -153,7 +159,7 @@ def main():
             , metavar='liste of url'
             , help='urls are separated by a newline, no blank line allowed'
             , widget='Textarea'
-            , gooey_options={'height': 200, })
+            , gooey_options={'height': 300, })
     parser.add_argument('-true_if_window_compatible'
         , metavar='Replace character'
         , action='store_true'
